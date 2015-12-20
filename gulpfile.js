@@ -27,7 +27,7 @@ gulp.task('css', function() {
 	    mqpacker,
 	    cssnano
 	];
-	return gulp.src('./src/css/*.css')
+	return gulp.src('./src/css/*.scss')
 		.pipe(sass())
 		.pipe(postcss(processors))
 		.pipe(gulp.dest('./dest/css'));
